@@ -1,19 +1,19 @@
 {
-  "name": "angular-seed",
+  "name": "palindrome-validator",
   "private": true,
-  "version": "0.0.0",
-  "description": "A starter project for AngularJS",
-  "repository": "https://github.com/angular/angular-seed",
+  "version": "0.1.0",
+  "description": "NodeJS app to handle requests that validates palindrome word or phrase.",
+  "repository": "https://github.com/gabrielbenjamim/palindrome-validator",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "bower": "^1.3.1",
-    "http-server": "^0.6.1",
+    "chai": "^3.5.0",
     "express": "^4.x",
-    "body-parser": "^1.10.1"
+    "mocha": "^3.2.0",
+    "unidecode": "^0.1.8"
   },
   "scripts": {
-    "postinstall": "bower install",
-    "prestart": "npm install",
-    "start": "http-server -a localhost -p 1337 -c-1"
+    "test": "mocha test",
+    "postinstall": "bower install"
   }
 }

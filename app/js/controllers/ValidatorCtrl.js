@@ -1,7 +1,7 @@
 angular.module('PalindromeValidator').controller("validatorCtrl", function ($scope, $http, $location, APIService) {
-	
-	$scope.palindromeSubmit = function(word){
-		APIService.isPalindrome(word).then(function(data) {
+
+	$scope.palindromeSubmit = function(text){
+		APIService.isPalindrome(text).then(function(data) {
 			if(data.status == 200){
 					$scope.message = "It's a Palindrome :)";
 			}
